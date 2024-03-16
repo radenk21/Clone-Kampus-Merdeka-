@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nav-box {
+        @apply px-5 p-3 flex place-items-center hover:bg-slate-100 hover:text-blue-500;
+    }
+    .card-action {
+        @apply flex justify-between text-blue-600 font-bold content-center place-items-center py-5;
+    }
+    .card {
+        @apply flex flex-col justify-between w-89 bg-white pt-8 px-6 pb-3 rounded-2xl shadow-card-shadow min-h-[417px];
+    }
+    .card-img {
+        @apply w-full flex justify-center;
+    }
+    .article-header {
+        @apply text-5xl text-black font-bold;
+    }
+    .card-button {
+        @apply mt-3 py-2.5 px-5 font-semibold text-center border rounded-3xl border-black;
+    }
+    .card-title {
+        @apply font-bold mt-4 text-xl;
+    }
+    .card-text{
+        @apply mt-1 text-sm text-[#53575A];
+    }
+    .footer-title{
+        @apply font-bold;
+    }
+    .footer-detail{
+        @apply mt-8 gap-4 flex flex-col;
+    }
+    .test{
+        @apply bg-red-400;
+    }
+}
